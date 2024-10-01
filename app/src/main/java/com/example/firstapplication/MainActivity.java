@@ -29,9 +29,9 @@ public class MainActivity extends AppCompatActivity {
         text = findViewById(R.id.text);
         editText = findViewById(R.id.edit_text);
         sizeText = findViewById(R.id.new_size);
-        edit_button.setOnClickListener(new MainActivity.EditTextListener(text,editText));
-        color_button.setOnClickListener(new MainActivity.EditColorListener(text));
-        size_button.setOnClickListener(new MainActivity.EditSizeListener(text, sizeText));
+        edit_button.setOnClickListener(new EditTextListener(text,editText));
+        color_button.setOnClickListener(new EditColorListener(text));
+        size_button.setOnClickListener(new EditSizeListener(text, sizeText));
     }
 
     static class EditTextListener implements View.OnClickListener {
